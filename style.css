@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+body{
+    height: 100svh;
+    max-width: 100svw;
+    text-transform: capitalize;
+    position: relative;
+    background: linear-gradient(to top,#2E1065, #6D28D9, #A855F7);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.your{
+    font-size: 18px;
+}
+.random{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.quotes{
+    width: 70%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 25px;
+background-color: #7235d58d;
+padding: 20px;
+backdrop-filter: blur(15px);
+border-radius: 20px;
+}
+.quote{
+    font-size: 25px;
+    font-weight: bold;
+}
+.btn{
+    padding: 20px;
+    background-color:#2e1065cb;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow:0px 0px 20px rgba(255, 255, 255, 0.411);
+
+}
+.btn:hover{
+background-color:#6c28d9a5;
+cursor: pointer;
+transition: 0.3 ease;
+}
+.btns{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 60px;
+
+}
+.copy,.share,.fav{
+    padding: 15px;
+    cursor: pointer;
+    background-color:  #7235d5e9;
+    border-radius: 15px;
+    color: white;
+}
+.copy:hover{
+    transform: scale(1.1);
+    background-color: #2E1065;
+    box-shadow: 0  0 15px rgba(164, 163, 163, 0.674);
+}
+.share:hover{
+    transform: scale(1.1);
+    background-color: #2E1065;
+    box-shadow: 0  0 15px rgba(164, 163, 163, 0.674);
+}
+.fav:hover{
+    transform: scale(1.1);
+    background-color: #2E1065;
+    box-shadow: 0  0 15px rgba(164, 163, 163, 0.674);
+}
+
+.toast{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    background-color:#2E1065;
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 10px;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: .3s;
+}
+
+.toast.show{
+    opacity: 1;
+}
