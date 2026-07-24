@@ -67,6 +67,11 @@ align-items: center;
 gap: 60px;
 
 }
+@media(max-width:427px){
+    .btns{
+        gap: 30px;
+    }
+}
 .copy,.share,.fav{
     padding: 15px;
     cursor: pointer;
